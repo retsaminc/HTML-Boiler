@@ -19,7 +19,7 @@ def install(dir,file):
 
 
 path = sys.path[0] #grabs current path this file is executed
-#path="C:\Users/retsam\Desktop\gpe\py_web_structure"  #alternatively you can insert the path to the directory of interest here
+#path="C:\path/to/folder"  #alternatively you can insert the path to the directory of interest here
 dirList=os.listdir(path)
 
 print dirList
