@@ -27,6 +27,7 @@ print dirList
 create(path+"/style")
 create(path+"/js")
 
+index = urllib2.urlopen("https://raw.github.com/retsaminc/HTML-Boiler/master/index.html")
 jquery = urllib2.urlopen("http://code.jquery.com/jquery-1.7.2.min.js")
 ninesixty = urllib2.urlopen("https://raw.github.com/nathansmith/960-Grid-System/master/code/css/960.css")
 modernizer = urllib2.urlopen("http://modernizr.com/downloads/modernizr-2.5.3.js")
@@ -36,4 +37,4 @@ install('js/modernizer.js', modernizer)
 install('style/960.css', ninesixty)
 install('js/main.js',[]) 
 install('style/style.css',[])
-install('index.html',[])
+install('index.html',index)
